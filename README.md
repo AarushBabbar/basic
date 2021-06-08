@@ -1,41 +1,29 @@
-Code as described/written in the video
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Tutorial</title>
+    <!DOCTYPE html>
+<html>
+    <head>
+        <title>Understanding Properties and their values</title>
+        <link href="style.css" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
+        .division{
+            border: 2px black solid;
+            height: 100px;
+            width: 100px;
+            background: blue;
+            border-radius: 50% ;
+            position: absolute;
+            animation: animation-1 5s infinite;
         }
-
-        .container {
-            border: 2px solid red;
-            margin: 3px 0;
-            background: cyan;
-            padding: 9px;
-        }
-
-        .bg-primary {
-            background-color: blueviolet;
-        }
-
-        .text-success {
-            color: white;
+        /*Animation*/
+        @keyframes animation-1{
+            0% {top: 0px; left: 0px;}
+            25% {top: 0px; left: 200px;}
+         50% {top: 200px; left: 200px; background: red;}
+         75% { top: 200px; left: 0px;}
+         100% {top: 0px; left:0px;}
         }
     </style>
 </head>
-<body>
-    <h1>Welcome to this JavaScript Tutorial</h1>
-    <div id="firstContainer" class="container">
-        <button id="click" onclick="clicked()">Click Me</button>
-        <p>This is a paragraph which is the best para of this universe</p>
-    </div>
-    <div class="container">
-        <p>This is a paragraph</p>
-    </div>
-    <script src="index.js"></script>
-</body>
+    <body>
+        <div class="division"></div>
+    </body>
 </html>
